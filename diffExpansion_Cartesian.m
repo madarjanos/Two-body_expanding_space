@@ -18,6 +18,6 @@ inv_r3 = (x*x + y*y)^(-1.5);
 dudt = [
     vx + H*x; 
     -G*M*inv_r3 * x - H*vx;
-    vy + 0.95*H*y; 
-    -G*M*inv_r3 * y - 0.95*H*vy;
+    vy + H*y; 
+    -G*M*inv_r3 * y - H*vy;
     ];
